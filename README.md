@@ -23,7 +23,7 @@ Ask a question about WHO clinical guidelines. ClariRAG retrieves the relevant pa
 
 A single query moves through five agent steps, with a built in retry loop when context is not good enough.
 
-![ClariRAG data flow](diagrams/dataflow.svg)
+![ClariRAG data flow](diagrams/clarirag_data_flow.svg)
 
 1. **Analyser** classifies the query (factual, comparative, procedural, definitional) and extracts entities
 2. **Expander** generates 2 to 3 phrasings of the same question to widen recall
@@ -37,7 +37,7 @@ A single query moves through five agent steps, with a built in retry loop when c
 
 This is the part that makes ClariRAG different from a typical RAG demo. Two independent search strategies are fused, reranked, and then every resulting citation is checked against what was actually retrieved. Anything fabricated gets dropped before it reaches the answer.
 
-![The ClariRAG trust pipeline](diagrams/trust_pipeline.svg)
+![The ClariRAG trust pipeline](diagrams/clarirag_trust_pipeline.svg)
 
 BM25 catches exact clinical terminology (section numbers, drug names, diagnostic codes) that embeddings tend to blur together. Pinecone catches the cases where the right answer uses different words than the question. Fusing both, reranking with a cross encoder, and validating citations afterward turned a 58% retrieval hit rate into 81%, and reduced hallucinated citations to zero in testing.
 
@@ -45,7 +45,7 @@ BM25 catches exact clinical terminology (section numbers, drug names, diagnostic
 
 ## System architecture
 
-![ClariRAG system architecture](diagrams/architecture.svg)
+![ClariRAG system architecture](diagrams/clarirag_architecture.svg)
 
 The React UI and Claude Desktop are two front doors into the same agent. Claude Desktop talks to it through a FastMCP server exposing three tools (search_knowledge_base, list_documents, get_health), so any MCP compatible agent can use ClariRAG as a tool without custom integration code.
 
