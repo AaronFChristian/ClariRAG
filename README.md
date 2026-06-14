@@ -171,4 +171,4 @@ Full reasoning for every major choice, including alternatives considered and rej
 MS Information Systems, San Diego State University
 B.Tech Computer Science and Business Systems
 
-[LinkedIn](www.linkedin.com/in/aaronchristi7n) | [Live demo](https://clarirag-ui.vercel.app)
+[LinkedIn](https://www.linkedin.com/in/aaronchristi7n) | [Live demo](https://clarirag-ui.vercel.app)
