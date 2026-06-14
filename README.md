@@ -167,8 +167,8 @@ Full reasoning for every major choice, including alternatives considered and rej
 
 ## Author
 
-**Aastha Joshi**
+**Aaron Christian**
 MS Information Systems, San Diego State University
 B.Tech Computer Science and Business Systems
 
-[LinkedIn](https://linkedin.com/in/aasthajoshi) | [Live demo](https://clarirag-ui.vercel.app)
+[LinkedIn](linkedin.com/in/aaronchristi7n) | [Live demo](https://clarirag-ui.vercel.app)
